@@ -9,11 +9,14 @@ export function Navbar() {
   return (
     <nav className="fixed top-10 left-0 right-0 z-50 flex justify-center p-4 md:p-6">
       <div className="w-full max-w-7xl flex items-center justify-between glass px-6 py-3 rounded-full border border-white/5 shadow-2xl">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center glow-purple">
-            <span className="font-headline font-bold text-white text-xl">V</span>
+        <div className="flex items-center gap-2 group cursor-pointer">
+          <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center glow-purple transition-transform group-hover:scale-105">
+            <span className="font-headline font-bold text-white text-xl">K</span>
           </div>
-          <span className="font-headline font-bold text-xl tracking-tight hidden sm:block">Vanguarda IA</span>
+          <div className="flex flex-col leading-none">
+            <span className="font-headline font-bold text-lg tracking-tight text-white">KIT IA</span>
+            <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-medium">para negócios</span>
+          </div>
         </div>
         
         <div className="hidden lg:flex items-center gap-8 text-sm font-medium text-muted-foreground">

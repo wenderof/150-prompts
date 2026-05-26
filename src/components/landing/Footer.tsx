@@ -5,20 +5,23 @@ import React from 'react'
 
 export function Footer() {
   return (
-    <footer className="py-12 px-6 border-t border-white/5 bg-background">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-        <div className="flex items-center gap-2">
-          <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-            <span className="font-headline font-bold text-white text-xl">V</span>
+    <footer className="py-16 px-6 border-t border-white/5 bg-[#050507]">
+      <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
+        <div className="flex items-center gap-3">
+          <div className="w-9 h-9 rounded-lg bg-primary flex items-center justify-center">
+            <span className="font-headline font-bold text-white text-xl">K</span>
           </div>
-          <span className="font-headline font-bold text-xl tracking-tight">Vanguarda IA</span>
+          <div className="flex flex-col leading-none">
+            <span className="font-headline font-bold text-xl tracking-tight text-white">KIT IA</span>
+            <span className="text-[10px] uppercase tracking-widest text-muted-foreground font-medium">para negócios</span>
+          </div>
         </div>
         
-        <p className="text-muted-foreground text-sm">
-          © {new Date().getFullYear()} Vanguarda IA. Todos os direitos reservados.
+        <p className="text-muted-foreground text-sm font-medium">
+          © {new Date().getFullYear()} KIT IA. Todos os direitos reservados.
         </p>
 
-        <div className="flex gap-6 text-sm text-muted-foreground">
+        <div className="flex gap-8 text-sm text-muted-foreground font-medium">
           <a href="#" className="hover:text-primary transition-colors">Termos de Uso</a>
           <a href="#" className="hover:text-primary transition-colors">Privacidade</a>
         </div>

@@ -3,7 +3,7 @@ import type {Metadata} from 'next';
 import './globals.css';
 
 export const metadata: Metadata = {
-  title: 'Vanguarda IA | KIT IA PARA NEGÓCIOS',
+  title: 'KIT IA | Inteligência Artificial Para Negócios',
   description: '150 Comandos Inteligentes de IA Para Criar Conteúdo e Vender Mais',
 };
 

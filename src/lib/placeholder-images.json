@@ -2,20 +2,20 @@
   "placeholderImages": [
     {
       "id": "hero-dashboard",
-      "description": "Premium AI SaaS Dashboard with analytics and charts",
-      "imageUrl": "https://picsum.photos/seed/ai-dash/1200/800",
+      "description": "Premium AI Laptop Mockup with SaaS Dashboard and dark purple glow",
+      "imageUrl": "https://picsum.photos/seed/kit-ia-dash/1200/800",
       "imageHint": "SaaS dashboard"
     },
     {
       "id": "ai-interface",
-      "description": "Futuristic AI chat interface mockup",
-      "imageUrl": "https://picsum.photos/seed/ai-ui/800/600",
+      "description": "Futuristic AI chat interface mockup with dark mode and purple accents",
+      "imageUrl": "https://picsum.photos/seed/kit-ia-ui/800/600",
       "imageHint": "AI interface"
     },
     {
       "id": "analytics-widget",
-      "description": "Modern analytics and data visualization widgets",
-      "imageUrl": "https://picsum.photos/seed/data-viz/600/400",
+      "description": "Modern analytics and data visualization widgets for AI automation",
+      "imageUrl": "https://picsum.photos/seed/kit-ia-data/600/400",
       "imageHint": "data charts"
     }
   ]
