@@ -2,9 +2,9 @@
   "placeholderImages": [
     {
       "id": "hero-dashboard",
-      "description": "Premium AI Laptop Mockup with SaaS Dashboard and dark purple glow",
-      "imageUrl": "https://picsum.photos/seed/kit-ia-dash/1200/800",
-      "imageHint": "SaaS dashboard"
+      "description": "Ultra premium dark laptop showing a ChatGPT 4 style dashboard with purple graphs and dark UI",
+      "imageUrl": "https://picsum.photos/seed/kit-ia-premium/1200/800",
+      "imageHint": "AI dashboard"
     },
     {
       "id": "ai-interface",
