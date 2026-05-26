@@ -3,7 +3,7 @@
 
 import React from 'react'
 import { Button } from "@/components/ui/button"
-import { CheckCircle2, Sparkles, ShieldCheck, Zap, Infinity } from "lucide-react"
+import { CheckCircle2, Sparkles, Zap, Smartphone, RefreshCw, ClipboardPaste } from "lucide-react"
 import Image from 'next/image'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
 
@@ -31,21 +31,41 @@ export function Hero() {
         </p>
 
         <div className="flex flex-col items-center mb-12">
-          <div className="flex items-baseline gap-3 mb-4">
+          <div className="flex items-baseline gap-3 mb-6">
             <span className="text-muted-foreground line-through text-xl">R$ 97,00</span>
             <span className="text-4xl md:text-6xl font-bold text-white">R$ 19,90</span>
           </div>
-          <p className="text-primary font-bold tracking-[0.2em] uppercase text-[10px] mb-8">Acesso vitalício + futuras atualizações</p>
           
-          <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mb-8">
-            <div className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-primary" /> Acesso Imediato</div>
-            <div className="flex items-center gap-1.5"><Infinity className="w-4 h-4 text-primary" /> Vitalício</div>
-            <div className="flex items-center gap-1.5"><Zap className="w-4 h-4 text-primary" /> Qualquer Nicho</div>
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-x-8 gap-y-3 text-sm text-muted-foreground mb-10 text-left max-w-xl">
+            <div className="flex items-center gap-2.5">
+              <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
+                <CheckCircle2 className="w-3.5 h-3.5 text-primary" />
+              </div>
+              <span className="font-medium text-white/80">Acesso imediato</span>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
+                <RefreshCw className="w-3.5 h-3.5 text-primary" />
+              </div>
+              <span className="font-medium text-white/80">Atualizações frequentes</span>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
+                <Zap className="w-3.5 h-3.5 text-primary" />
+              </div>
+              <span className="font-medium text-white/80">Qualquer nicho</span>
+            </div>
+            <div className="flex items-center gap-2.5">
+              <div className="w-5 h-5 rounded-full bg-primary/10 flex items-center justify-center">
+                <ClipboardPaste className="w-3.5 h-3.5 text-primary" />
+              </div>
+              <span className="font-medium text-white/80">Copie e cole no ChatGPT</span>
+            </div>
           </div>
           
           <Button 
             size="lg" 
-            className="h-16 px-10 text-xl font-bold rounded-2xl glow-purple hover:scale-105 transition-all duration-300"
+            className="h-16 px-10 text-xl font-bold rounded-2xl glow-purple hover:scale-105 transition-all duration-300 group"
             onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
           >
             LIBERAR MEU ACESSO AGORA
@@ -67,7 +87,7 @@ export function Hero() {
              <div className="absolute top-10 left-10 glass p-4 rounded-xl border border-white/10 hidden md:block">
                 <div className="flex items-center gap-2 mb-2">
                   <div className="w-2 h-2 rounded-full bg-green-500 animate-ping" />
-                  <span className="text-[10px] font-bold uppercase tracking-widest">Sistema Ativo</span>
+                  <span className="text-[10px] font-bold uppercase tracking-widest text-white/90">Sistema Ativo</span>
                 </div>
                 <div className="h-1.5 w-32 bg-white/10 rounded-full">
                   <div className="h-full w-2/3 bg-primary rounded-full" />
