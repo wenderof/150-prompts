@@ -1,3 +1,28 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-mockup",
+      "description": "Premium laptop mockup showing AI dashboard",
+      "imageUrl": "https://picsum.photos/seed/ai-hero/1200/800",
+      "imageHint": "laptop mockup AI dashboard"
+    },
+    {
+      "id": "app-interface",
+      "description": "Clean AI chat interface",
+      "imageUrl": "https://picsum.photos/seed/ai-chat/800/600",
+      "imageHint": "SaaS interface dashboard"
+    },
+    {
+      "id": "mobile-mockup",
+      "description": "Phone mockup showing AI content",
+      "imageUrl": "https://picsum.photos/seed/mobile-content/400/800",
+      "imageHint": "phone mockup app"
+    },
+    {
+      "id": "guarantee-seal",
+      "description": "Luxury 7-day guarantee seal",
+      "imageUrl": "https://picsum.photos/seed/guarantee/300/300",
+      "imageHint": "premium badge seal"
+    }
+  ]
 }
