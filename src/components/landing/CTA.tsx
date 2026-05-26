@@ -1,14 +1,11 @@
 
 "use client"
 
-import React, { useState } from 'react'
+import React from 'react'
 import { Button } from "@/components/ui/button"
-import { Checkbox } from "@/components/ui/checkbox"
-import { ShieldCheck, Calendar, Trophy, Lock, Sparkles, Check, Flame } from "lucide-react"
+import { ShieldCheck, Calendar, Lock, Trophy, Check } from "lucide-react"
 
 export function CTA() {
-  const [orderBump, setOrderBump] = useState(false)
-
   return (
     <section id="pricing" className="py-24 px-6 relative overflow-hidden">
       <div className="absolute inset-0 bg-primary/10 -z-10 blur-[150px] rounded-full translate-y-1/2" />
@@ -23,67 +20,33 @@ export function CTA() {
           Tenha o Sistema em Segundos
         </h2>
         
-        <div className="mb-12">
-          <p className="text-muted-foreground line-through text-lg">De R$ 97,00</p>
-          <div className="text-6xl md:text-8xl font-black text-white mb-2">R$ 19,90</div>
-          <p className="text-primary font-bold tracking-[0.2em] uppercase text-xs">Acesso vitalício + atualizações gratuitas</p>
-        </div>
-
-        {/* Order Bump Section */}
-        <div 
-          onClick={() => setOrderBump(!orderBump)}
-          className={`mb-12 text-left p-6 rounded-3xl border-2 transition-all cursor-pointer group relative overflow-hidden ${
-            orderBump 
-              ? 'border-primary bg-primary/5 shadow-[0_0_30px_rgba(157,80,255,0.15)]' 
-              : 'border-white/5 bg-white/5 hover:border-white/20'
-          }`}
-        >
-          <div className="flex items-start gap-4">
-            <div className="pt-1">
-              <Checkbox 
-                checked={orderBump} 
-                onCheckedChange={(checked) => setOrderBump(!!checked)}
-                className="w-6 h-6 border-white/20 data-[state=checked]:bg-primary"
-              />
-            </div>
-            <div className="flex-1">
-              <div className="flex flex-wrap items-center justify-between gap-2 mb-2">
-                <div className="flex items-center gap-2">
-                  <Flame className="w-5 h-5 text-orange-500 fill-orange-500" />
-                  <h3 className="font-bold text-lg text-white">Biblioteca IA Atualizada</h3>
+        <div className="mb-10">
+          <p className="text-muted-foreground line-through text-lg mb-2">De R$ 97,00</p>
+          <div className="text-6xl md:text-8xl font-black text-white mb-6">R$ 19,90</div>
+          
+          {/* Main Benefits List */}
+          <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 max-w-2xl mx-auto mb-12">
+            {[
+              "Acesso imediato",
+              "Funciona em qualquer nicho",
+              "Copie e cole no ChatGPT",
+              "Fácil de usar"
+            ].map((benefit, i) => (
+              <div key={i} className="flex items-center gap-2 text-sm font-semibold text-white/90">
+                <div className="w-5 h-5 rounded-full bg-primary/20 flex items-center justify-center">
+                  <Check className="w-3 h-3 text-primary" />
                 </div>
-                <div className="bg-primary/20 text-primary px-3 py-1 rounded-full text-xs font-bold">
-                  + APENAS R$ 9,90
-                </div>
+                {benefit}
               </div>
-              <p className="text-muted-foreground text-sm leading-relaxed mb-4">
-                Receba futuras atualizações da biblioteca com novos comandos, headlines, hooks virais e estratégias modernas de IA.
-              </p>
-              
-              <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
-                {[
-                  "Novos comandos adicionados",
-                  "Atualizações frequentes",
-                  "Tendências virais",
-                  "Novos hooks e headlines",
-                  "Expansão contínua"
-                ].map((benefit, i) => (
-                  <div key={i} className="flex items-center gap-2 text-[11px] text-white/60 font-medium">
-                    <Check className="w-3 h-3 text-primary" />
-                    {benefit}
-                  </div>
-                ))}
-              </div>
-            </div>
+            ))}
           </div>
-          {orderBump && (
-            <div className="absolute top-0 right-0 p-2">
-              <Sparkles className="w-4 h-4 text-primary animate-pulse" />
-            </div>
-          )}
         </div>
 
-        <Button size="lg" className="h-20 px-12 text-xl md:text-2xl font-black rounded-2xl glow-purple mb-16 hover:scale-[1.02] transition-all w-full md:max-w-md mx-auto flex items-center justify-center gap-3">
+        <Button 
+          size="lg" 
+          className="h-20 px-12 text-xl md:text-2xl font-black rounded-2xl glow-purple mb-16 hover:scale-[1.03] active:scale-[0.98] transition-all w-full md:max-w-md mx-auto flex items-center justify-center gap-3 shadow-[0_0_40px_rgba(157,80,255,0.4)]"
+          onClick={() => {}}
+        >
           QUERO OS 150 COMANDOS
         </Button>
 
