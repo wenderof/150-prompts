@@ -11,10 +11,12 @@ import { FAQ } from "@/components/landing/FAQ"
 import { CTA } from "@/components/landing/CTA"
 import { Footer } from "@/components/landing/Footer"
 import { StickyCTA } from "@/components/landing/StickyCTA"
+import { AnnouncementBar } from "@/components/landing/AnnouncementBar"
 
 export default function Home() {
   return (
     <main className="min-h-screen relative">
+      <AnnouncementBar />
       <Navbar />
       <Hero />
       <Features />

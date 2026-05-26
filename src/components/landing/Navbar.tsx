@@ -7,7 +7,7 @@ import { Rocket } from "lucide-react"
 
 export function Navbar() {
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex justify-center p-4 md:p-6">
+    <nav className="fixed top-10 left-0 right-0 z-50 flex justify-center p-4 md:p-6">
       <div className="w-full max-w-7xl flex items-center justify-between glass px-6 py-3 rounded-full border border-white/5 shadow-2xl">
         <div className="flex items-center gap-2">
           <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center glow-purple">
@@ -24,7 +24,7 @@ export function Navbar() {
 
         <Button 
           variant="default" 
-          className="rounded-full px-6 font-bold glow-purple text-xs md:text-sm h-10 md:h-11"
+          className="rounded-full px-6 font-bold glow-purple text-xs md:text-sm h-10 md:h-11 hover:scale-105 transition-transform"
           onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
         >
           <Rocket className="w-4 h-4 mr-2 hidden md:block" />

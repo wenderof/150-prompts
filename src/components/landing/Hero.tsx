@@ -11,7 +11,7 @@ export function Hero() {
   const heroMockup = PlaceHolderImages.find(img => img.id === 'hero-dashboard');
 
   return (
-    <section className="relative pt-32 pb-20 px-6 overflow-hidden">
+    <section className="relative pt-40 pb-20 px-6 overflow-hidden">
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[800px] h-[400px] bg-primary/20 blur-[120px] -z-10 rounded-full" />
       
       <div className="max-w-7xl mx-auto text-center flex flex-col items-center">
@@ -22,7 +22,7 @@ export function Hero() {
           </div>
         </div>
 
-        <h1 className="font-headline text-4xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.1] max-w-5xl tracking-tight text-gradient">
+        <h1 className="font-headline text-4xl md:text-7xl lg:text-8xl font-bold mb-6 leading-[1.1] max-w-5xl tracking-tight text-gradient text-white">
           150 Comandos Inteligentes de IA Para Vender Mais
         </h1>
         
@@ -35,13 +35,19 @@ export function Hero() {
             <span className="text-muted-foreground line-through text-xl">R$ 97,00</span>
             <span className="text-4xl md:text-6xl font-bold text-white">R$ 19,90</span>
           </div>
+          <p className="text-primary font-bold tracking-[0.2em] uppercase text-[10px] mb-8">Acesso vitalício + futuras atualizações</p>
+          
           <div className="flex flex-wrap justify-center gap-4 text-sm text-muted-foreground mb-8">
             <div className="flex items-center gap-1.5"><CheckCircle2 className="w-4 h-4 text-primary" /> Acesso Imediato</div>
             <div className="flex items-center gap-1.5"><Infinity className="w-4 h-4 text-primary" /> Vitalício</div>
             <div className="flex items-center gap-1.5"><Zap className="w-4 h-4 text-primary" /> Qualquer Nicho</div>
           </div>
           
-          <Button size="lg" className="h-16 px-10 text-xl font-bold rounded-2xl glow-purple hover:scale-105 transition-all duration-300">
+          <Button 
+            size="lg" 
+            className="h-16 px-10 text-xl font-bold rounded-2xl glow-purple hover:scale-105 transition-all duration-300"
+            onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+          >
             LIBERAR MEU ACESSO AGORA
           </Button>
         </div>
