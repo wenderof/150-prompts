@@ -1,0 +1,23 @@
+
+{
+  "placeholderImages": [
+    {
+      "id": "hero-dashboard",
+      "description": "Premium KIT IA software mockup on a dark laptop",
+      "imageUrl": "/kit-ia-mockup.png",
+      "imageHint": "AI mockup"
+    },
+    {
+      "id": "ai-interface",
+      "description": "Futuristic AI chat interface mockup with dark mode and purple accents",
+      "imageUrl": "/kit-ia-mockup.png",
+      "imageHint": "AI interface"
+    },
+    {
+      "id": "analytics-widget",
+      "description": "Modern analytics and data visualization widgets for AI automation",
+      "imageUrl": "https://picsum.photos/seed/kit-ia-data/600/400",
+      "imageHint": "data charts"
+    }
+  ]
+}
