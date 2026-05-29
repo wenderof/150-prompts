@@ -62,7 +62,7 @@ export function Hero() {
              {/* Video Placeholder Area */}
              <div className="aspect-video w-full bg-black/40 rounded-[2rem] border border-white/5 flex items-center justify-center relative overflow-hidden">
                 <Image 
-                  src={heroMockup?.imageUrl || '/kit-ia-mockup.png'} 
+                  src={heroMockup?.imageUrl || '/kit-ia-mockup.jpg'} 
                   alt="Demonstração KIT IA"
                   fill
                   className="object-cover group-hover:scale-105 transition-all duration-700"

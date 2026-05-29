@@ -3,13 +3,13 @@
     {
       "id": "hero-dashboard",
       "description": "Ultra premium dark laptop showing a ChatGPT style dashboard with purple graphs and futuristic UI",
-      "imageUrl": "https://picsum.photos/seed/kit-ia-saas-mockup/1200/800",
+      "imageUrl": "/kit-ia-mockup.jpg",
       "imageHint": "AI dashboard"
     },
     {
       "id": "ai-interface",
       "description": "Futuristic AI chat interface mockup with dark mode and purple accents",
-      "imageUrl": "https://picsum.photos/seed/kit-ia-ui/800/600",
+      "imageUrl": "/kit-ia-mockup.jpg",
       "imageHint": "AI interface"
     },
     {
