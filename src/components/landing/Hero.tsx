@@ -3,7 +3,7 @@
 
 import React from 'react'
 import { Button } from "@/components/ui/button"
-import { Sparkles, MessageSquare, Infinity, Clock, Target, Play } from "lucide-react"
+import { Sparkles, MessageSquare, Infinity, Clock, Target } from "lucide-react"
 import Image from 'next/image'
 import { PlaceHolderImages } from '@/lib/placeholder-images'
 
@@ -54,28 +54,20 @@ export function Hero() {
           </Button>
         </div>
 
-        {/* VSL / Mockup Container */}
+        {/* Mockup Container */}
         <div className="relative w-full max-w-5xl mx-auto group">
           <div className="absolute -inset-4 bg-primary/20 rounded-[3rem] blur-[80px] opacity-30 group-hover:opacity-50 transition duration-1000" />
           
           <div className="relative glass p-2 md:p-3 rounded-[2.5rem] border border-white/10 shadow-2xl overflow-hidden bg-[#0D0D12]">
-             {/* Video Placeholder Area */}
-             <div className="aspect-video w-full bg-black/40 rounded-[2rem] border border-white/5 flex items-center justify-center relative overflow-hidden">
+             {/* Static Mockup Area */}
+             <div className="aspect-video w-full bg-black/40 rounded-[2rem] border border-white/5 relative overflow-hidden">
                 <Image 
-                  src={heroMockup?.imageUrl || '/kit-ia-mockup.jpg'} 
+                  src="/kit-ia-mockup.jpg" 
                   alt="Demonstração KIT IA"
                   fill
                   className="object-cover group-hover:scale-105 transition-all duration-700"
                   priority
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-60" />
-                
-                <div className="z-10 flex flex-col items-center gap-4">
-                  <div className="w-20 h-20 rounded-full bg-primary flex items-center justify-center glow-purple cursor-pointer hover:scale-110 transition-transform shadow-[0_0_30px_rgba(157,80,255,0.6)]">
-                    <Play className="w-8 h-8 text-white fill-white ml-1" />
-                  </div>
-                  <p className="text-xs font-bold tracking-[0.3em] uppercase text-white drop-shadow-lg">Veja o Kit funcionando na prática</p>
-                </div>
              </div>
           </div>
         </div>
