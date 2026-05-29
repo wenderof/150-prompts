@@ -2,8 +2,7 @@
 "use client"
 
 import React from 'react'
-import { Instagram, Video, Megaphone, MessageCircle, Copy, Zap, Target, Clock, Sparkles } from "lucide-react"
-import Image from 'next/image'
+import { Instagram, Video, Megaphone, MessageCircle, CheckCircle2, Copy, Zap, Target, Clock, Sparkles } from "lucide-react"
 
 const benefits = [
   { icon: Copy, text: "Prompts prontos para copiar" },
@@ -21,7 +20,7 @@ const categories = [
 
 export function ValueCreation() {
   return (
-    <section className="py-24 px-6 relative overflow-hidden bg-background">
+    <section id="value" className="py-24 px-6 relative overflow-hidden bg-background">
       {/* Background Glows */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-primary/5 blur-[120px] rounded-full -z-10" />
 
@@ -59,7 +58,7 @@ export function ValueCreation() {
             </div>
           </div>
 
-          {/* Right Side: Mockup */}
+          {/* Right Side: SaaS Mockup */}
           <div className="relative order-1 lg:order-2 animate-in fade-in zoom-in duration-1000">
             <div className="absolute -inset-10 bg-primary/20 blur-[100px] opacity-20" />
             
@@ -73,40 +72,59 @@ export function ValueCreation() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Sparkles className="w-3 h-3 text-primary" />
-                  <span className="text-[9px] font-black uppercase tracking-[0.2em] text-white/40">AI Studio v.4.0</span>
+                  <span className="text-[9px] font-black uppercase tracking-[0.2em] text-white/40">Prompt Studio v.4.0</span>
                 </div>
               </div>
 
-              <div className="relative aspect-[16/10] w-full">
-                <Image 
-                  src="/kit-ia-mockup.png"
-                  alt="KIT IA Mockup"
-                  fill
-                  className="object-cover"
-                />
-                
-                {/* Floating Overlay Elements to keep the UI feel */}
-                <div className="absolute inset-0 bg-gradient-to-t from-[#0D0D12] via-transparent to-transparent opacity-40" />
-                
-                {/* Simplified Category Selector UI Overlay */}
-                <div className="absolute top-6 left-6 right-6 grid grid-cols-4 gap-2">
+              <div className="p-6 md:p-8 space-y-6">
+                {/* Category Selector */}
+                <div className="grid grid-cols-4 gap-2">
                   {categories.map((c, i) => (
-                    <div key={i} className={`flex flex-col items-center gap-2 p-2 rounded-xl border border-white/10 bg-black/40 backdrop-blur-sm`}>
-                      <c.icon className={`w-3 h-3 ${c.color}`} />
-                      <span className="text-[7px] font-bold uppercase tracking-widest text-white/70">{c.label}</span>
+                    <div key={i} className={`flex flex-col items-center gap-2 p-3 rounded-xl border border-white/5 bg-white/5 ${i === 0 ? 'border-primary/50 bg-primary/10' : ''}`}>
+                      <c.icon className={`w-4 h-4 ${c.color} ${i === 0 ? 'text-primary' : ''}`} />
+                      <span className="text-[8px] font-bold uppercase tracking-widest text-white/50">{c.label}</span>
                     </div>
                   ))}
                 </div>
-                
-                {/* Floating "Copiado" Alert */}
-                <div className="absolute bottom-6 right-6 glass p-3 rounded-xl border border-primary/30 shadow-2xl animate-float hidden md:block">
+
+                {/* Prompt Block */}
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 rounded-full bg-primary/20 flex items-center justify-center">
+                      <Copy className="w-3 h-3 text-primary" />
+                    </div>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-primary">Prompt Selecionado</span>
+                  </div>
+                  <div className="bg-black/60 rounded-2xl p-5 border border-white/10 italic text-white/60 text-xs leading-relaxed">
+                    "Atue como um especialista em tráfego pago. Crie 3 variações de anúncios de alta conversão para meu produto digital..."
+                  </div>
+                </div>
+
+                {/* Response Visualizer */}
+                <div className="space-y-3">
+                  <div className="flex items-center gap-2">
+                    <div className="w-6 h-6 rounded-full bg-green-500/20 flex items-center justify-center">
+                      <CheckCircle2 className="w-3 h-3 text-green-500" />
+                    </div>
+                    <span className="text-[10px] font-black uppercase tracking-widest text-green-500">Resultado da IA</span>
+                  </div>
+                  <div className="bg-primary/5 rounded-2xl p-5 border border-primary/10 space-y-2">
+                    <div className="h-1.5 w-1/3 bg-primary/40 rounded-full" />
+                    <div className="h-1.5 w-full bg-white/10 rounded-full" />
+                    <div className="h-1.5 w-full bg-white/10 rounded-full" />
+                    <div className="h-1.5 w-4/5 bg-white/10 rounded-full" />
+                  </div>
+                </div>
+
+                {/* Floating Feedback */}
+                <div className="absolute -bottom-6 -right-6 glass p-4 rounded-2xl border border-primary/30 shadow-2xl animate-float hidden md:block">
                   <div className="flex items-center gap-3">
-                    <div className="w-8 h-8 rounded-lg bg-primary flex items-center justify-center">
-                      <Copy className="w-4 h-4 text-white" />
+                    <div className="w-10 h-10 rounded-xl bg-primary flex items-center justify-center">
+                      <Copy className="w-5 h-5 text-white" />
                     </div>
                     <div>
-                      <p className="text-[9px] font-black text-white leading-none">PRONTO!</p>
-                      <p className="text-[8px] text-primary font-bold uppercase tracking-widest">Prompt Copiado</p>
+                      <p className="text-[10px] font-black text-white leading-none">PRONTO!</p>
+                      <p className="text-[9px] text-primary font-bold uppercase tracking-widest">Copiado para o clipboard</p>
                     </div>
                   </div>
                 </div>
