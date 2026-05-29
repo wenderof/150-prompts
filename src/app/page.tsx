@@ -12,6 +12,8 @@ import { CTA } from "@/components/landing/CTA"
 import { Footer } from "@/components/landing/Footer"
 import { StickyCTA } from "@/components/landing/StickyCTA"
 import { AnnouncementBar } from "@/components/landing/AnnouncementBar"
+import { Testimonials } from "@/components/landing/Testimonials"
+import { Benefits } from "@/components/landing/Benefits"
 
 export default function Home() {
   return (
@@ -19,22 +21,24 @@ export default function Home() {
       <AnnouncementBar />
       <Navbar />
       <Hero />
-      <Features />
-      <AIDemo />
-      <ValueCreation />
-      <Bonus />
       
-      {/* Solution Section (Contextual Divider) */}
+      <PainPoints />
+      
       <section className="py-24 px-6 text-center bg-primary/5">
         <h2 className="font-headline text-4xl md:text-6xl font-bold mb-6 tracking-tight text-gradient">
-          A IA Faz o Trabalho Difícil Por Você
+          A IA Trabalha, Você Lucra
         </h2>
         <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-          Chega de perder tempo tentando descobrir o que funciona. O KIT já contém a inteligência necessária para vender qualquer produto.
+          Não perca mais tempo tentando "adivinhar" o que escrever. Copie nossos prompts validados e tenha resultados profissionais em segundos.
         </p>
       </section>
 
-      <PainPoints />
+      <AIDemo />
+      <Features /> {/* O que o kit inclui */}
+      <ValueCreation /> {/* O que consegue criar */}
+      <Benefits /> {/* Benefícios Estratégicos */}
+      <Bonus />
+      <Testimonials />
       <HowItWorks />
       <FAQ />
       <CTA />

@@ -3,7 +3,7 @@
 
 import React from 'react'
 import { Button } from "@/components/ui/button"
-import { Rocket } from "lucide-react"
+import { Sparkles } from "lucide-react"
 
 export function Navbar() {
   return (
@@ -20,17 +20,16 @@ export function Navbar() {
         </div>
         
         <div className="hidden lg:flex items-center gap-8 text-xs font-black uppercase tracking-widest text-muted-foreground">
-          <a href="#features" className="hover:text-primary transition-colors">Recursos</a>
-          <a href="#demo" className="hover:text-primary transition-colors">Sistema</a>
+          <a href="#workflow" className="hover:text-primary transition-colors">Como funciona</a>
+          <a href="#demo" className="hover:text-primary transition-colors">Demonstração</a>
           <a href="#faq" className="hover:text-primary transition-colors">FAQ</a>
         </div>
 
         <Button 
           variant="default" 
-          className="rounded-full px-6 font-black glow-purple text-[10px] tracking-widest h-10 hover:scale-105 transition-transform"
+          className="rounded-full px-8 font-black glow-purple text-[10px] tracking-widest h-11 hover:scale-105 transition-transform"
           onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
         >
-          <Rocket className="w-4 h-4 mr-2 hidden md:block" />
           COMEÇAR AGORA
         </Button>
       </div>
