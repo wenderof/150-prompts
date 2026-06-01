@@ -4,13 +4,10 @@ import React from 'react'
 import { Button } from "@/components/ui/button"
 import { Sparkles, MessageSquare, Infinity, Clock, Target } from "lucide-react"
 import Image from 'next/image'
-import { PlaceHolderImages } from '@/lib/placeholder-images'
 
 export function Hero() {
-  const heroMockup = PlaceHolderImages.find(img => img.id === 'hero-dashboard');
-
   return (
-    <section className="relative pt-44 pb-20 px-6 overflow-hidden bg-[#05010A]">
+    <section className="relative pt-32 md:pt-44 pb-20 px-6 overflow-hidden bg-[#05010A]">
       {/* Background Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-primary/20 blur-[180px] -z-10 rounded-full opacity-50" />
       
@@ -18,24 +15,29 @@ export function Hero() {
         {/* Launch Badge */}
         <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full border border-white/10 text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-primary mb-8 animate-in fade-in slide-in-from-top-4 duration-1000">
           <Sparkles className="w-4 h-4" />
-          Oferta de lançamento por tempo limitado
+          Oferta de lançamento
         </div>
 
         {/* Brand Header */}
         <div className="flex flex-col items-center mb-6 animate-in fade-in zoom-in duration-1000">
-          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight tracking-tighter text-white max-w-5xl">
+          <h1 className="font-headline text-4xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight tracking-tighter text-white max-w-5xl">
             150 Prompts Que Criam <span className="text-primary">Posts, Anúncios e Vendas</span> em Segundos
           </h1>
         </div>
         
-        <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mb-12 leading-relaxed font-medium opacity-90">
-          Copie, cole e gere conteúdos profissionais usando IA mesmo sem experiência.
-        </p>
+        <div className="flex flex-col items-center gap-4 mb-10 md:mb-12">
+          <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl leading-relaxed font-medium opacity-90">
+            Copie, cole e gere conteúdos profissionais usando IA mesmo sem experiência.
+          </p>
+          <p className="text-xs md:text-sm text-white/40 font-bold uppercase tracking-widest">
+            ✓ Crie semanas de conteúdo sem contratar social media
+          </p>
+        </div>
 
         {/* Price & CTA */}
-        <div className="flex flex-col items-center mb-16 z-20">
+        <div className="flex flex-col items-center mb-10 md:mb-12 z-20">
           <div className="flex flex-col items-center mb-8">
-            <span className="text-xl md:text-2xl text-muted-foreground/40 line-through font-bold mb-1">
+            <span className="text-2xl md:text-3xl text-white/30 line-through font-bold mb-1">
               De R$ 67
             </span>
             <div className="flex items-center gap-6">
@@ -44,7 +46,7 @@ export function Hero() {
               </span>
             </div>
             <p className="text-[10px] md:text-xs text-primary font-black uppercase tracking-[0.3em] mt-4">
-              Oferta de lançamento por tempo limitado
+              Preço promocional por tempo limitado
             </p>
             <p className="text-[10px] md:text-xs text-muted-foreground font-bold uppercase tracking-[0.3em] opacity-40 mt-2">
               ✓ Funciona no ChatGPT grátis • ✓ Acesso Imediato
