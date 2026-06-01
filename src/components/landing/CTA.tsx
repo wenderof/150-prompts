@@ -1,9 +1,8 @@
-
 "use client"
 
 import React from 'react'
 import { Button } from "@/components/ui/button"
-import { ShieldCheck, Calendar, Lock, Trophy, Check, Sparkles } from "lucide-react"
+import { ShieldCheck, Calendar, Lock, Trophy, Check } from "lucide-react"
 
 export function CTA() {
   return (
@@ -20,9 +19,16 @@ export function CTA() {
           Tenha a Biblioteca Completa Agora
         </h2>
         
-        <div className="mb-10">
-          <p className="text-muted-foreground text-lg mb-2 uppercase tracking-widest font-bold opacity-50">Preço Promocional por Tempo Limitado</p>
-          <div className="text-7xl md:text-9xl font-black text-white mb-6">R$ 19,90</div>
+        <div className="mb-10 flex flex-col items-center">
+          <span className="text-xl md:text-2xl text-muted-foreground/40 line-through font-bold mb-2">
+            De R$ 67
+          </span>
+          <div className="text-7xl md:text-9xl font-black text-white mb-4 drop-shadow-[0_0_30px_rgba(157,80,255,0.5)]">
+            R$ 19,90
+          </div>
+          <p className="text-xs md:text-sm text-primary font-black uppercase tracking-[0.3em] mb-12">
+            Oferta de lançamento por tempo limitado
+          </p>
           
           {/* Main Benefits List */}
           <div className="flex flex-wrap justify-center gap-x-8 gap-y-4 max-w-2xl mx-auto mb-12">
@@ -48,7 +54,7 @@ export function CTA() {
           onClick={() => {}}
         >
           <span>LIBERAR ACESSO AGORA</span>
-          <span className="text-[10px] font-bold opacity-70 uppercase tracking-[0.3em]">Clique para garantir sua vaga</span>
+          <span className="text-[10px] font-bold opacity-70 uppercase tracking-[0.3em]">ACESSO IMEDIATO AO KIT</span>
         </Button>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-start border-t border-white/10 pt-16">

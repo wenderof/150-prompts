@@ -1,4 +1,3 @@
-
 "use client"
 
 import React from 'react'
@@ -35,16 +34,19 @@ export function Hero() {
 
         {/* Price & CTA */}
         <div className="flex flex-col items-center mb-16 z-20">
-          <div className="flex flex-col items-center gap-1 mb-8">
+          <div className="flex flex-col items-center mb-8">
+            <span className="text-xl md:text-2xl text-muted-foreground/40 line-through font-bold mb-1">
+              De R$ 67
+            </span>
             <div className="flex items-center gap-6">
-              <span className="text-6xl md:text-8xl font-black text-white drop-shadow-[0_0_15px_rgba(157,80,255,0.6)]">
+              <span className="text-7xl md:text-9xl font-black text-white drop-shadow-[0_0_25px_rgba(157,80,255,0.6)]">
                 R$ 19,90
               </span>
-              <div className="bg-primary/20 text-primary text-[10px] md:text-xs font-black px-4 py-2 rounded-full border border-primary/30 uppercase tracking-[0.2em] animate-pulse">
-                PREÇO PROMOCIONAL
-              </div>
             </div>
-            <p className="text-xs md:text-sm text-muted-foreground font-bold uppercase tracking-[0.3em] opacity-60 mt-2">
+            <p className="text-[10px] md:text-xs text-primary font-black uppercase tracking-[0.3em] mt-4">
+              Oferta de lançamento por tempo limitado
+            </p>
+            <p className="text-[10px] md:text-xs text-muted-foreground font-bold uppercase tracking-[0.3em] opacity-40 mt-2">
               ✓ Funciona no ChatGPT grátis • ✓ Acesso Imediato
             </p>
           </div>
