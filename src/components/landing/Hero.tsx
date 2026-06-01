@@ -24,34 +24,43 @@ export function Hero() {
 
         {/* Brand Header */}
         <div className="flex flex-col items-center mb-6 animate-in fade-in zoom-in duration-1000">
-          <h1 className="font-headline text-5xl md:text-8xl font-black mb-4 leading-tight tracking-tighter text-white max-w-5xl">
-            Tenha a Inteligência dos Maiores Especialistas no seu <span className="text-primary">ChatGPT</span>
+          <h1 className="font-headline text-5xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight tracking-tighter text-white max-w-5xl">
+            150 Prompts Que Criam <span className="text-primary">Posts, Anúncios e Vendas</span> em Segundos
           </h1>
         </div>
         
-        <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mb-12 leading-relaxed font-medium opacity-80">
-          150 prompts premium prontos para você copiar, colar e gerar posts, anúncios, reels e vendas em segundos. Esqueça a tela em branco para sempre.
+        <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl mb-12 leading-relaxed font-medium opacity-90">
+          Copie, cole e gere conteúdos profissionais usando IA mesmo sem experiência.
         </p>
 
         {/* Price & CTA */}
         <div className="flex flex-col items-center mb-16 z-20">
-          <div className="flex flex-col items-center gap-1 mb-6">
-            <div className="flex items-center gap-4">
-              <span className="text-4xl md:text-6xl font-black text-white">R$ 19,90</span>
-              <div className="bg-primary/20 text-primary text-[10px] font-black px-3 py-1 rounded-full border border-primary/30 uppercase tracking-widest">
+          <div className="flex flex-col items-center gap-1 mb-8">
+            <div className="flex items-center gap-6">
+              <span className="text-6xl md:text-8xl font-black text-white drop-shadow-[0_0_15px_rgba(157,80,255,0.6)]">
+                R$ 19,90
+              </span>
+              <div className="bg-primary/20 text-primary text-[10px] md:text-xs font-black px-4 py-2 rounded-full border border-primary/30 uppercase tracking-[0.2em] animate-pulse">
                 PREÇO PROMOCIONAL
               </div>
             </div>
-            <p className="text-xs text-muted-foreground font-bold uppercase tracking-widest opacity-60">Acesso imediato • Funciona no ChatGPT grátis</p>
+            <p className="text-xs md:text-sm text-muted-foreground font-bold uppercase tracking-[0.3em] opacity-60 mt-2">
+              ✓ Funciona no ChatGPT grátis • ✓ Acesso Imediato
+            </p>
           </div>
           
-          <Button 
-            size="lg" 
-            className="h-20 px-16 text-2xl font-black rounded-2xl glow-purple hover:scale-105 active:scale-95 transition-all duration-300 group shadow-[0_0_50px_rgba(157,80,255,0.4)]"
-            onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
-          >
-            QUERO OS 150 PROMPTS
-          </Button>
+          <div className="flex flex-col items-center gap-4">
+            <Button 
+              size="lg" 
+              className="h-20 px-12 md:px-20 text-xl md:text-2xl font-black rounded-2xl glow-purple hover:scale-105 active:scale-95 transition-all duration-300 group shadow-[0_0_50px_rgba(157,80,255,0.4)]"
+              onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
+            >
+              LIBERAR ACESSO IMEDIATO
+            </Button>
+            <p className="text-[10px] md:text-xs text-muted-foreground font-bold uppercase tracking-widest opacity-50">
+              Acesso liberado imediatamente após o pagamento.
+            </p>
+          </div>
         </div>
 
         {/* Mockup Container */}
@@ -59,7 +68,6 @@ export function Hero() {
           <div className="absolute -inset-4 bg-primary/20 rounded-[3rem] blur-[80px] opacity-30 group-hover:opacity-50 transition duration-1000" />
           
           <div className="relative glass p-2 md:p-3 rounded-[2.5rem] border border-white/10 shadow-2xl overflow-hidden bg-[#0D0D12]">
-             {/* Static Mockup Area */}
              <div className="aspect-video w-full bg-black/40 rounded-[2rem] border border-white/5 relative overflow-hidden">
                 <Image 
                   src="/kit-ia-mockup.jpg" 
