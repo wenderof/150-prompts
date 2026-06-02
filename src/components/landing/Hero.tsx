@@ -63,7 +63,7 @@ export function Hero() {
           </div>
         </div>
 
-        {/* Mockup Container - Subido para reduzir espaço vazio */}
+        {/* Mockup Container */}
         <div className="relative w-full max-w-5xl mx-auto group mt-4">
           <div className="absolute -inset-4 bg-primary/20 rounded-[3rem] blur-[80px] opacity-30 group-hover:opacity-50 transition duration-1000" />
           

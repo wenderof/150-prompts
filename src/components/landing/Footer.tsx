@@ -1,9 +1,15 @@
 
 "use client"
 
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 export function Footer() {
+  const [year, setYear] = useState<number | null>(null);
+
+  useEffect(() => {
+    setYear(new Date().getFullYear());
+  }, []);
+
   return (
     <footer className="py-16 px-6 border-t border-white/5 bg-[#050507]">
       <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-10">
@@ -18,7 +24,7 @@ export function Footer() {
         </div>
         
         <p className="text-muted-foreground text-sm font-medium">
-          © {new Date().getFullYear()} KIT IA. Todos os direitos reservados.
+          © {year} KIT IA. Todos os direitos reservados.
         </p>
 
         <div className="flex gap-8 text-sm text-muted-foreground font-medium">
