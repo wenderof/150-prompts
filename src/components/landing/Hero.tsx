@@ -39,8 +39,8 @@ export function Hero() {
             <div className="flex items-start justify-center">
               <span className="text-2xl md:text-5xl font-black text-white mt-1.5 md:mt-2.5 mr-2 opacity-80 leading-none">R$</span>
               <span className="text-7xl md:text-9xl font-black text-white drop-shadow-[0_0_30px_rgba(157,80,255,0.7)] leading-none">
-                14,90
-              </span>
+  14,90
+</span>
             </div>
             <p className="text-[10px] md:text-xs text-primary font-black uppercase tracking-[0.3em] mt-6">
               Preço promocional por tempo limitado
