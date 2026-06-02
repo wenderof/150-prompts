@@ -24,7 +24,7 @@ export function CTA() {
           <span className="text-xl md:text-2xl text-white/70 line-through font-bold opacity-80 mb-4">
             De R$67
           </span>
-          <div className="text-5xl md:text-9xl font-black text-white mb-4 drop-shadow-[0_0_30px_rgba(157,80,255,0.5)]">
+          <div className="text-6xl md:text-9xl font-black text-white mb-4 drop-shadow-[0_0_30px_rgba(157,80,255,0.5)]">
             R$ 14,90
           </div>
           <p className="text-xs md:text-sm text-primary font-black uppercase tracking-[0.3em] mb-12">
