@@ -54,7 +54,7 @@ export function CTA() {
           className="h-24 px-12 text-2xl md:text-3xl font-black rounded-2xl glow-purple mb-16 hover:scale-[1.03] active:scale-[0.98] transition-all w-full md:max-w-xl mx-auto flex flex-col items-center justify-center gap-1 shadow-[0_0_40px_rgba(157,80,255,0.4)]"
           onClick={() => {}}
         >
-          <span>QUERO OS 150 PROMPTS</span>
+          <span>GARANTIR MEU ACESSO</span>
           <span className="text-[10px] font-bold opacity-70 uppercase tracking-[0.3em]">ACESSO IMEDIATO AO KIT</span>
         </Button>
 
