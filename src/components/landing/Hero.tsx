@@ -37,7 +37,7 @@ export function Hero() {
             </span>
 
             <div className="flex items-start justify-center">
-  <span className="text-4xl md:text-4xl font-black text-white mt-2 mr-2 opacity-80 leading-none">
+  <span className="text-7xl md:text-4xl font-black text-white mt-2 mr-2 opacity-80 leading-none">
     R$
   </span>
 
