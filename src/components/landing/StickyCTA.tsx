@@ -26,7 +26,7 @@ export function StickyCTA() {
         onClick={() => document.getElementById('pricing')?.scrollIntoView({ behavior: 'smooth' })}
       >
         <Sparkles className="w-5 h-5 mr-2" />
-        QUERO ACESSO POR R$19,90
+        QUERO ACESSO POR R$14,90
       </Button>
     </div>
   )

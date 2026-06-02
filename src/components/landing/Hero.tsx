@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from 'react'
@@ -7,17 +8,11 @@ import Image from 'next/image'
 
 export function Hero() {
   return (
-    <section className="relative pt-32 md:pt-44 pb-20 px-6 overflow-hidden bg-[#05010A]">
+    <section className="relative pt-32 md:pt-40 pb-20 px-6 overflow-hidden bg-[#05010A]">
       {/* Background Glows */}
       <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[1200px] h-[600px] bg-primary/20 blur-[180px] -z-10 rounded-full opacity-50" />
       
       <div className="max-w-7xl mx-auto text-center flex flex-col items-center">
-        {/* Launch Badge */}
-        <div className="inline-flex items-center gap-2 glass px-4 py-2 rounded-full border border-white/10 text-[10px] md:text-xs font-black uppercase tracking-[0.2em] text-primary mb-8 animate-in fade-in slide-in-from-top-4 duration-1000">
-          <Sparkles className="w-4 h-4" />
-          Oferta de lançamento
-        </div>
-
         {/* Brand Header */}
         <div className="flex flex-col items-center mb-6 animate-in fade-in zoom-in duration-1000">
           <h1 className="font-headline text-4xl md:text-7xl lg:text-8xl font-black mb-6 leading-tight tracking-tighter text-white max-w-5xl">
@@ -25,11 +20,11 @@ export function Hero() {
           </h1>
         </div>
         
-        <div className="flex flex-col items-center gap-4 mb-10 md:mb-12">
+        <div className="flex flex-col items-center gap-4 mb-8 md:mb-10">
           <p className="text-lg md:text-2xl text-muted-foreground max-w-3xl leading-relaxed font-medium opacity-90">
             Copie, cole e gere conteúdos profissionais usando IA mesmo sem experiência.
           </p>
-          <p className="text-xs md:text-sm text-white/40 font-bold uppercase tracking-widest">
+          <p className="text-xs md:text-sm text-white/50 font-bold uppercase tracking-widest">
             ✓ Crie semanas de conteúdo sem contratar social media
           </p>
         </div>
@@ -37,11 +32,12 @@ export function Hero() {
         {/* Price & CTA */}
         <div className="flex flex-col items-center mb-10 md:mb-12 z-20">
           <div className="flex flex-col items-center mb-8">
-            <span className="text-2xl md:text-3xl text-white/30 line-through font-bold mb-1">
-              De R$ 67
+            <span className="text-xl md:text-2xl text-white/70 line-through font-bold opacity-80 mb-2">
+              De R$67
             </span>
+
             <div className="flex items-center gap-6">
-              <span className="text-7xl md:text-9xl font-black text-white drop-shadow-[0_0_25px_rgba(157,80,255,0.6)]">
+              <span className="text-7xl md:text-9xl font-black text-white drop-shadow-[0_0_30px_rgba(157,80,255,0.7)]">
                 R$ 19,90
               </span>
             </div>
@@ -61,14 +57,14 @@ export function Hero() {
             >
               LIBERAR ACESSO IMEDIATO
             </Button>
-            <p className="text-[10px] md:text-xs text-muted-foreground font-bold uppercase tracking-widest opacity-50">
+            <p className="text-[10px] md:text-xs text-muted-foreground font-bold uppercase tracking-widest opacity-60">
               Acesso liberado imediatamente após o pagamento.
             </p>
           </div>
         </div>
 
-        {/* Mockup Container */}
-        <div className="relative w-full max-w-5xl mx-auto group">
+        {/* Mockup Container - Subido para reduzir espaço vazio */}
+        <div className="relative w-full max-w-5xl mx-auto group mt-4">
           <div className="absolute -inset-4 bg-primary/20 rounded-[3rem] blur-[80px] opacity-30 group-hover:opacity-50 transition duration-1000" />
           
           <div className="relative glass p-2 md:p-3 rounded-[2.5rem] border border-white/10 shadow-2xl overflow-hidden bg-[#0D0D12]">

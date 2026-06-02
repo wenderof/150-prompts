@@ -1,3 +1,4 @@
+
 "use client"
 
 import React from 'react'
@@ -20,14 +21,14 @@ export function CTA() {
         </h2>
         
         <div className="mb-10 flex flex-col items-center">
-          <span className="text-xl md:text-2xl text-muted-foreground/40 line-through font-bold mb-2">
-            De R$ 67
+          <span className="text-xl md:text-2xl text-white/70 line-through font-bold opacity-80 mb-4">
+            De R$67
           </span>
           <div className="text-7xl md:text-9xl font-black text-white mb-4 drop-shadow-[0_0_30px_rgba(157,80,255,0.5)]">
             R$ 19,90
           </div>
           <p className="text-xs md:text-sm text-primary font-black uppercase tracking-[0.3em] mb-12">
-            Oferta de lançamento por tempo limitado
+            Aproveite o preço promocional por tempo limitado
           </p>
           
           {/* Main Benefits List */}
@@ -53,7 +54,7 @@ export function CTA() {
           className="h-24 px-12 text-2xl md:text-3xl font-black rounded-2xl glow-purple mb-16 hover:scale-[1.03] active:scale-[0.98] transition-all w-full md:max-w-xl mx-auto flex flex-col items-center justify-center gap-1 shadow-[0_0_40px_rgba(157,80,255,0.4)]"
           onClick={() => {}}
         >
-          <span>LIBERAR ACESSO AGORA</span>
+          <span>QUERO OS 150 PROMPTS</span>
           <span className="text-[10px] font-bold opacity-70 uppercase tracking-[0.3em]">ACESSO IMEDIATO AO KIT</span>
         </Button>
 
