@@ -51,7 +51,7 @@ Com o KIT IA PARA NEGÓCIOS você recebe 150 prompts prontos para criar posts, r
 
 Copie, cole e gere conteúdos profissionais em segundos.
 
-🔥 Acesso imediato por R$19,90.`,
+🔥 Acesso imediato por R$14,90.`,
     tags: ["Meta Ads", "Copy", "Vendas"]
   }
 ]

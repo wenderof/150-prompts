@@ -38,7 +38,7 @@ export function Hero() {
 
             <div className="flex items-center gap-6">
               <span className="text-7xl md:text-9xl font-black text-white drop-shadow-[0_0_30px_rgba(157,80,255,0.7)]">
-                R$ 19,90
+                R$ 14,90
               </span>
             </div>
             <p className="text-[10px] md:text-xs text-primary font-black uppercase tracking-[0.3em] mt-4">

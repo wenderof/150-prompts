@@ -25,7 +25,7 @@ export function CTA() {
             De R$67
           </span>
           <div className="text-7xl md:text-9xl font-black text-white mb-4 drop-shadow-[0_0_30px_rgba(157,80,255,0.5)]">
-            R$ 19,90
+            R$ 14,90
           </div>
           <p className="text-xs md:text-sm text-primary font-black uppercase tracking-[0.3em] mb-12">
             Aproveite o preço promocional por tempo limitado
